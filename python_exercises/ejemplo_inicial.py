@@ -29,27 +29,58 @@
 
 # turtle.mainloop()
 
+# import turtle
+
+# def main():
+#     window = turtle.Screen()
+#     bill = turtle.Turtle()
+
+#     make_square(bill)
+
+#     turtle.mainloop()
+
+
+# def make_square(bill):
+#     lenght = int(input("Square lenght: "))
+
+#     for i in range(4):
+#         make_lines(bill,lenght)
+
+# def make_lines(bill,lenght):
+#     bill.forward(lenght)
+#     bill.left(90)
+
+
+# if __name__ == '__main__':
+#     main()
+
+
 import turtle
 
 def main():
     window = turtle.Screen()
-    bill = turtle.Turtle()
+    luis = turtle.Turtle()
 
-    make_square(bill)
+    make_square(luis)
 
     turtle.mainloop()
 
+def make_square(luis):
+    turn = 0
+    lenght = input('Insert lenght: ')
+    lenght = int(lenght)
 
-def make_square(bill):
-    lenght = int(input("Square lenght: "))
+    while turn < 10:
+        turn = input('Insert number of sides of your figure: ')
+        turn = int(turn)
+        if turn <  10:
+            print('The minimum number of sides is 3')
 
-    for i in range(4):
-        make_lines(bill,lenght)
+    angle = 360/turn
 
-def make_lines(bill,lenght):
-    bill.forward(lenght)
-    bill.left(90)
-
+    for i in range(turn):
+        luis.forward(lenght)
+        luis.left(angle)
 
 if __name__ == '__main__':
     main()

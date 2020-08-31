@@ -1,0 +1,17 @@
+una función está siendo recursiva cuando dentro de el bloque de instrucciones que la conforma se usa a sí misma.
+
+El concepto puede sonar complicado pero es muy común su uso, por ejemplo cuando haces el calculo del factorial de un número lo haces con una función recursiva:
+
+El factorial de un número es el número multiplicado por los números antes de el, por ejemplo
+
+5! es 5*4*3*2*1
+
+Esto se puede expresar como
+
+5*fac(4)
+4*fac(3)
+3*fac(2)
+2*fac(1)
+1*fac(0)
+
+Nota importante: Cuándo estes trabajando con recursividad siempre debes pensar en el caso base, es decir debes definir el momento en el que la función dejará de llamarse a si misma, para que no hagas un loop infinito, por ejemplo en el caso del factorial terminas la ejecución cuando llegas a cero.

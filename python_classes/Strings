@@ -1,0 +1,56 @@
+Los Strings tambien se pueden recorrer como una lista.
+ejemplo:
+>>> nombre = 'bill'
+>>> nombre[0]
+>>> 'b'
+
+Para saber las longitud del String se usa len:
+ejemplo:
+>>> len(nombre)
+>>> 4
+
+Para saber en que posicion se encuentra el caracter del String se usa el metodo find:
+ejemplo:
+>>> nombre.find('i')
+>>> 1
+
+Para pasar a mayusculas un String se usa upper()
+>>> nombre.upper()
+>>> 'BILL'
+
+Para pasar a mayusculas un String se usa upper()
+>>> nombre.lower()
+>>> 'bill'
+
+Para pasar a Capitalizar un String se usa capitalize()
+>>> nombre.capitalize()
+>>> 'Bill'
+
+nombre = input("¿Cual es tu nombre?: ")
+
+nombre = nombre.capitalize() #Bill
+nombre = nombre.strip() #'bill ' -> 'bill' Elimina Espacios en blanco del inicio o el final
+nombre = nombre.upper() # BILL
+nombre = nombre.lower() # bill
+nombre = nombre.replace('i','a') #remplaza los 'i' por 'a'
+nombre[0] # Mediante índices puedes recorrer
+len(nombre) # Cuenta la cantidad de caracteres que tiene el dato alamacenado en la variable 
+len("bill") # Cuenta los caracteres del string -> 4
+
+================================================================================================
+
+#TRABAJANDO CON TEXTO: SLICES (Rebanadas)
+
+nombre = 'Francisco'
+
+nombre[0]       # 'F' 
+nombre[1]       # 'r' 
+nombre[0:3]     # 'Fra' 
+nombre[:3]      # 'Fra' 
+nombre[3:]      # 'ncisco' 
+nombre[1:7]     # 'rancis' 
+nombre[1:7:2]   # 'rni' 
+nombre[::]      # 'Francisco' 
+nombre[1::3]    # 'rcc' 
+nombre[::-1]    # 'ocsicnarF' 
+
